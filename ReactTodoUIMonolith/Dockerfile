@@ -1,6 +1,5 @@
 FROM node
-WORKDIR /app
-COPY . .
+WORKDIR /app1
 RUN npm install
 RUN npm run build
 RUN apt-get update && apt-get install -y nginx
